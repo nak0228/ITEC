@@ -27,7 +27,7 @@
 <ul>
  <li><a href="#0">トップ</a></li>
  <li><a href="#1">はじめに</a></li>
- <li><a href="#2">クイック・スタート</a></li>
+ <li><a href="#2">修復ツールについて</a></li>
  <li><a href="#3">修復結果</a></li>
  <li><a href="#4">修復ツールの使い方</a></li>
  <li><a href="#5">プレゼン資料</a></li>
@@ -63,11 +63,14 @@
 <div class="content_wrap2" id="2">
 <div class="max_width">
 <article class="content">
-<h1>編集方法</h1>
-<p>index.html の内容を変更してください。</p>
-<p>style.css（デザインに関する記述）と script.js のカスタマイズは任意です。</p>
-<p>images フォルダには、画像を保存してください。</p>
-<p><a href="http://japanism.info/free-template10-editing.html" target="_blank" rel="nofollow">編集方法の解説はこちら</a>からご確認ください。</p>
+<h1>修復ツールについて</h1>
+<p>ここではGoogle Colaboratory上で開発された動画修復ツールについて簡単に説明します。</p>
+<p>このツールはYoutube等のオンライン動画やPC内にある動画ファイルを、複数のDeepLearningライブラリを使って修復します。</P>
+<p>機能の一覧とそれに使用したライブラリは以下の表を参照してください。</p>
+<p><img src="images/table.jpg" alt="table" class="img_frame"/></p>
+<p>処理は「超解像度化」→「カラー化」→「ノイズ低減」→「顔画像の修復」→「フレーム補間」の順に処理されます。ただし全ての処理を実行すると修復に大量の時間がかかるため、必要な機能のみを選択して実行できるようにしています。</p>
+<p>各処理の実行結果はそれぞれGoogle Driveにコピーされるようになっています。最終結果はFinal_output.mp4という名前で保存される他、オリジナル画像と最終結果の比較動画がcomparison_output.mp4（フレーム補間を有効にするとこのファイルは作られません）という名前で作成されます。</p>
+<p><img src="images/flow.jpg" alt="process flow" class="img_frame"/></p>
 </article>
 </div><!-- max_width -->
 </div><!-- content_wrap2 -->
@@ -204,7 +207,7 @@
 <h2>修復プロセスの実行</h2>
 <p>以上で修復に必要な準備が整いました。画面上にあるメニューバーから「ランタイム（またはRuntime）」をクリックして、「以降のセルを実行（またはRun after)」を選択してください。すると残りの処理が実行され、結果ファイルがGoogle Driveの中のMovieというフォルダにコピーされます。</p>
 <p>なお、修復処理に時間がかかりすぎるとGoogle Colaboratoryが勝手に処理を中断してしまうことがあります。無償版のGoogle Colaboratoryでは、できるだけ修復する動画を短く（数秒程度）に抑えることをお勧めします。</p>	
-	
+<p><img src="images/doit.jpg" alt="run after" class="img_frame"/></p>		
 </article>
 </div><!-- max_width -->
 </div><!-- content_wrap2 -->
